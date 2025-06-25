@@ -4,6 +4,9 @@
 **Database**: IBM Db2 on Cloud (Lite Plan)  
 **Author**: Suraj Bhardwaj  
 **Email**: suraj.unisiegen@gmail.com  
+[![SQL](https://img.shields.io/badge/Language-SQL-blue)](#)
+[![IBM Db2](https://img.shields.io/badge/Database-IBM%20Db2-lightgrey)](https://www.ibm.com/products/db2)
+[![IBM Cloud](https://img.shields.io/badge/Platform-IBM%20Cloud-blue)](https://cloud.ibm.com/)
 
 ---
 
@@ -123,7 +126,7 @@ Run each of the four export scripts **individually**:
 - `06_03_export_datasets_inventory.sql` → `dataset_list.csv`
 - `06_04_export_skills_distribution.sql` → `skills_distribution.csv`
 
-🛠️ **To Export:**
+**To Export:**
 1. Run the query in IBM Db2 Web SQL Editor
 2. Click the **Export as CSV** button in the result grid
 3. Save the file with a descriptive name
@@ -176,7 +179,7 @@ This SQL project is a self-contained, realistic implementation of a data science
 
 ---
 
-## 📄 License
+## License
 
 This project is open-sourced under the MIT License.
 
