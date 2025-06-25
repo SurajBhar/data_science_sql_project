@@ -1,4 +1,4 @@
-# SQL Project: Data Science Team Management (IBM Db2 Cloud)
+# Data Science Team Management (IBM Db2 Cloud)
 
 This SQL-based project simulates how a data science organization manages its team members, projects, skills, datasets, and offices. It demonstrates relational modeling, query writing, data manipulation, and export operations — built entirely in **IBM Db2 on IBM Cloud (Lite Plan, 200MB limit)**.
 
