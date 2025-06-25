@@ -1,0 +1,23 @@
+-- 1. Confirm role update for Suraj Bhardwaj (MB001)
+SELECT
+  MEMBER_ID, FIRST_NAME, LAST_NAME, ROLE
+FROM TEAM_MEMBERS
+WHERE MEMBER_ID = 'MB001';
+
+-- 2. Check if dataset DST02 was deleted successfully
+SELECT
+  DATASET_ID, DATASET_NAME, SIZE_MB, PROJECT_ID
+FROM DATASETS
+WHERE DATASET_ID = 'DST02';
+
+-- 3. Check remaining datasets
+SELECT
+  DATASET_ID, DATASET_NAME, SIZE_MB
+FROM DATASETS;
+
+-- 4. View orphan projects (projects without any datasets)
+SELECT
+  P.PROJECT_ID, P.PROJECT_NAME
+FROM PROJECTS P
+LEFT JOIN DATASETS D ON P.PROJECT_ID = D.PROJECT_ID
+WHERE D.DATASET_ID IS NULL;

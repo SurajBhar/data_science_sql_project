@@ -1,0 +1,8 @@
+-- 4. Skills Distribution Report
+SELECT
+  S.SKILL_NAME AS "Skill",
+  COUNT(TM.MEMBER_ID) AS "Number of Members"
+FROM SKILLS S
+LEFT JOIN TEAM_MEMBERS TM ON TM.SKILL_ID = S.SKILL_ID
+GROUP BY S.SKILL_NAME
+ORDER BY "Number of Members" DESC;
